@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const userRouter = require('./routes/userRoutes');
 const storyRoutes = require('./routes/storyRoutes');  // Importing story routes
 const cors = require('cors');
+const bodyParser = require("body-parser");
 
 const app = express();
 
