@@ -11,9 +11,10 @@ const app = express();
 // Enable CORS
 app.use(cors({
     origin: 'https://travelstoryapp.netlify.app',  // Replace with your frontend URL
+    //origin: 'http://localhost:5173',
     credentials: true,
     methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 // Middlewares
